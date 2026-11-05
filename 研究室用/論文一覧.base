@@ -1,0 +1,81 @@
+filters:
+  and:
+    - 'file.inFolder("論文ノート")'
+    - 'file.ext == "md"'
+properties:
+  file.name:
+    displayName: ノート
+  note.tags:
+    displayName: 興味度タグ
+  note.出版名:
+    displayName: 出版社名
+views:
+  - type: table
+    name: すべて
+    order:
+      - file.name
+      - note.タイトル
+      - note.tags
+      - note.読書状況
+      - note.ジャーナル
+      - note.出版名
+      - note.著者名
+      - note.出版年
+      - note.PDF
+      - note.DOI
+  - type: table
+    name: high
+    filters: 'file.hasTag("high")'
+    order:
+      - file.name
+      - note.タイトル
+      - note.tags
+      - note.読書状況
+      - note.ジャーナル
+      - note.出版名
+      - note.著者名
+      - note.出版年
+      - note.PDF
+      - note.DOI
+  - type: table
+    name: middle
+    filters: 'file.hasTag("middle")'
+    order:
+      - file.name
+      - note.タイトル
+      - note.tags
+      - note.読書状況
+      - note.ジャーナル
+      - note.出版名
+      - note.著者名
+      - note.出版年
+      - note.PDF
+      - note.DOI
+  - type: table
+    name: low
+    filters: 'file.hasTag("low")'
+    order:
+      - file.name
+      - note.タイトル
+      - note.tags
+      - note.読書状況
+      - note.ジャーナル
+      - note.出版名
+      - note.著者名
+      - note.出版年
+      - note.PDF
+      - note.DOI
+  - type: table
+    name: 興味度未設定
+    filters: '!file.hasTag("high") && !file.hasTag("middle") && !file.hasTag("low")'
+    order:
+      - file.name
+      - note.タイトル
+      - note.tags
+      - note.読書状況
+      - note.ジャーナル
+      - note.出版名
+      - note.著者名
+      - note.出版年
+      - note.PDF
+      - note.DOI

@@ -1,0 +1,15 @@
+{
+  "types": {
+    "タイトル": "text",
+    "ジャーナル": "text",
+    "出版名": "text",
+    "DOI": "text",
+    "URL": "text",
+    "PDF": "text",
+    "読書状況": "text",
+    "著者名": "multitext",
+    "出版年": "number",
+    "tags": "tags",
+    "作成日": "date"
+  }
+}

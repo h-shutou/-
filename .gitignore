@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Obsidianの個人設定・作業状態
+研究室用/.obsidian/*
+!研究室用/.obsidian/app.json
+!研究室用/.obsidian/core-plugins.json
+!研究室用/.obsidian/templates.json
+!研究室用/.obsidian/types.json
+
+# 一時ファイル
+研究室用/.trash/
+*.tmp
