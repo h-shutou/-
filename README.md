@@ -26,3 +26,13 @@ Obsidianで管理する論文メモと文献探索の記録です。Obsidianで�
 収録PDF `s11747-019-00696-0.pdf` は、Davenport, T., Guha, A., Grewal, D., & Bressgott, T. (2020). How artificial intelligence will change the future of marketing. Journal of the Academy of Marketing Science, 48, 24–42. [DOI](https://doi.org/10.1007/s11747-019-00696-0)。原論文は[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)で公開されています。PDFは原版のまま収録し、ノートでは日本語で要約しています。
 
 各論文・データセットの権利はそれぞれの権利者に帰属します。
+
+## PDFの参照経路と共通の参考文献
+
+ALOHA／ACTのarXiv版PDFを `研究室用/01 論文PDF/arXiv/` に保存しています。Google Scholarで参照を確認した資料は `研究室用/01 論文PDF/Google Scholar/` に分けます。Google Scholar由来のPDFはまだ登録していません。
+
+- [共通の参考文献一覧](研究室用/参考文献/参考文献一覧.md)
+- [BibTeX](研究室用/参考文献/references.bib)
+- [取得元別の保存・統合ルール](研究室用/参考文献/取得元別の保存ルール.md)
+
+ALOHA／ACTのPDFはarXiv:2304.13705v1を改変せず保存しています。著者・出典・版・取得日・取得URLは参考文献一覧を参照してください。
