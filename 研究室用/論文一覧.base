@@ -79,3 +79,21 @@ views:
       - note.出版年
       - note.PDF
       - note.DOI
+  - type: table
+    name: 著者と協働と公開時期
+    order:
+      - file.name
+      - note.タイトル
+      - note.著者名
+      - note.協働ロボット
+      - note.使用ロボット
+      - note.協働形態
+      - note.初公開日
+      - note.参照版公開日
+      - note.出版年
+      - note.論文種別
+      - note.新規性要約
+      - note.tags
+    sort:
+      - property: note.初公開日
+        direction: DESC

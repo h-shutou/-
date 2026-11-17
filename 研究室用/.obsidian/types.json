@@ -10,6 +10,14 @@
     "著者名": "multitext",
     "出版年": "number",
     "tags": "tags",
-    "作成日": "date"
+    "作成日": "date",
+    "初公開日": "date",
+    "参照版公開日": "date",
+    "発表年": "number",
+    "論文種別": "text",
+    "協働ロボット": "text",
+    "使用ロボット": "multitext",
+    "協働形態": "text",
+    "新規性要約": "text"
   }
 }
