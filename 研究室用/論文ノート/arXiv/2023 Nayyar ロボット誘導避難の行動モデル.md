@@ -161,3 +161,7 @@ Nayyar, M., & Wagner, A. R. (2023). *Modeling Evacuee Behavior for Robot-Guided 
 - Wagner (2021), *Robot-guided evacuation as a paradigm for human-robot interaction research*（[1]）。避難誘導をHRI研究の題材として位置づける。
 - Nayyar & Wagner (2019), *Effective robot evacuation strategies in emergencies*（[15]）。群衆とロボットの指示が異なるシミュレーション研究。
 - Robinette et al. (2016), *Overtrust of robots in emergency evacuation scenarios*（[12]）。避難時のロボットへの信頼に関する背景研究。
+
+## 後続研究の探索（2026-11-17）
+
+[[文献探索/避難誘導の後続研究とレスキューロボットの有力論文|後続研究とレスキュー分野の候補一覧]]に2025年の実機行動モデル論文、2026年のVR比較論文などを整理した。このノート本文は元の予備報告の内容を保持する。
