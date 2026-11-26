@@ -2,6 +2,9 @@ filters:
   and:
     - 'file.inFolder("論文ノート")'
     - 'file.ext == "md"'
+formulas:
+  初公開の新しさ: 'if(初公開日, date(初公開日).relative(), "未確認")'
+  掲載版の新しさ: 'if(掲載版公開日, date(掲載版公開日).relative(), "未確認")'
 properties:
   file.name:
     displayName: ノート
@@ -96,4 +99,120 @@ views:
       - note.tags
     sort:
       - property: note.初公開日
+        direction: DESC
+
+  - type: table
+    name: 分類と著者と新規性
+    order:
+      - file.name
+      - 主分類
+      - 副分類
+      - 研究用途
+      - フィジカルAI
+      - 著者名
+      - 協働ロボット
+      - 使用ロボット
+      - 協働形態
+      - 初公開日
+      - formula.初公開の新しさ
+      - 参照版公開日
+      - 掲載版公開日
+      - formula.掲載版の新しさ
+      - 出版年
+      - 新規性要約
+      - 評価環境
+      - 評価要点
+      - 被引用数
+      - 引用数確認日
+      - 確認範囲
+      - tags
+    sort:
+      - property: 初公開日
+        direction: DESC
+  - type: table
+    name: フィジカルAI
+    filters: "主分類 == \"フィジカルAI\""
+    order:
+      - file.name
+      - 主分類
+      - 副分類
+      - 研究用途
+      - フィジカルAI
+      - 著者名
+      - 協働ロボット
+      - 使用ロボット
+      - 協働形態
+      - 初公開日
+      - formula.初公開の新しさ
+      - 参照版公開日
+      - 掲載版公開日
+      - formula.掲載版の新しさ
+      - 出版年
+      - 新規性要約
+      - 評価環境
+      - 評価要点
+      - 被引用数
+      - 引用数確認日
+      - 確認範囲
+      - tags
+    sort:
+      - property: 初公開日
+        direction: DESC
+  - type: table
+    name: レスキュー重点論文
+    filters: "レスキュー重点 == true"
+    order:
+      - file.name
+      - 主分類
+      - 副分類
+      - 研究用途
+      - フィジカルAI
+      - 著者名
+      - 協働ロボット
+      - 使用ロボット
+      - 協働形態
+      - 初公開日
+      - formula.初公開の新しさ
+      - 参照版公開日
+      - 掲載版公開日
+      - formula.掲載版の新しさ
+      - 出版年
+      - 新規性要約
+      - 評価環境
+      - 評価要点
+      - 被引用数
+      - 引用数確認日
+      - 確認範囲
+      - tags
+    sort:
+      - property: 被引用数
+        direction: DESC
+  - type: table
+    name: 避難誘導とHRI
+    filters: "研究用途 == \"避難誘導\""
+    order:
+      - file.name
+      - 主分類
+      - 副分類
+      - 研究用途
+      - フィジカルAI
+      - 著者名
+      - 協働ロボット
+      - 使用ロボット
+      - 協働形態
+      - 初公開日
+      - formula.初公開の新しさ
+      - 参照版公開日
+      - 掲載版公開日
+      - formula.掲載版の新しさ
+      - 出版年
+      - 新規性要約
+      - 評価環境
+      - 評価要点
+      - 被引用数
+      - 引用数確認日
+      - 確認範囲
+      - tags
+    sort:
+      - property: 初公開日
         direction: DESC
